@@ -1,0 +1,276 @@
+body { 
+    font-family: 'Overpass', sans-serif;
+    text-transform: uppercase; 
+    color: #fff;
+    /* background-color: #22182d; */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .8), transparent),
+    url('http://zigis.com.au/wp-content/uploads/2014/05/holiday2013_front.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  }
+  
+  h1 {
+    font: 700 36px 'Oswald', sans-serif;
+    text-align: center;
+  }
+  
+  .header-span {
+    display: block;
+    font-weight: 100;
+  }
+  
+  hr { 
+    max-width: 5em; 
+    margin-bottom: 30px; 
+  }
+  
+  .all-the-foods {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  div.clip-path-container {
+    display: inline-block;
+    position: relative;
+    height: 250px;
+    width: 250px;
+    margin: 10px ;
+    padding: 3px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    overflow: hidden;  
+    border-radius: 50%;
+    border-collapse: separate; 
+    background-color: #222;
+  }
+  
+  .clip-path-container:focus,
+  .clip-path-container:active,
+  .clip-path-container:hover {
+    border-radius: 50%;
+    outline: none;
+  } 
+  
+  .food {
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    transition: all .2s ease-in-out;
+    transform: scale(1.5); 
+    outline: none;
+    overflow: hidden;  
+    clip-path: polygon(0 100%, 0 0, 52% 0, 52% 100%);
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+  }
+  
+  
+  .clip-path-container:hover .food {
+    clip-path: polygon(50% 100%, 50% 0, 100% 0, 100% 100%);
+    transform: scale(1.1);
+    
+  }
+  
+  .clip-path-container:hover .description-holder { 
+    left: 20px;
+    opacity: 1;
+  }
+  
+  .description-holder {
+    position: absolute;
+    top: 35px;
+    left: 120px;
+    height: 300px;
+    width: 100px;
+    transition: all .4s ease-in-out;
+    transition-delay: .1s;
+    opacity: 0;
+    text-align: right;
+  }
+  
+  /*.guac-holder {
+    top: 45px;
+  }*/
+  
+  .description-holder h4 {
+    font-size: 14px;
+    margin-bottom: -8px;
+  }
+  
+  .description-holder p {
+    max-width: 100px;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: none;
+    
+  }
+  
+  .bibimbap {
+    background-image: url('http://purepng.com/public/uploads/large/purepng.com-american-cookiecookieamericandelicioussnacksweetyummybiscuit-21525886868xdoig.png');
+    background-position: 0 0;
+  }
+  
+  .pizza {
+    background-image: url('https://68.media.tumblr.com/0611cb5f1f60e58690483ef61f507161/tumblr_inline_mthhxpDHvE1rpjrqw.png');
+  }
+  
+  .guacamole {
+    background-image: url('https://cabofresh.com/wp-content/themes/cabofresh/assets/images/homepage/homepage-guacbowl.png');
+    background-position: 50% 90%;
+  }
+  
+  .cookie {
+    background-image: url('http://purepng.com/public/uploads/large/purepng.com-american-cookiecookieamericandelicioussnacksweetyummybiscuit-21525886868xdoig.png');
+    background-position: 50% 90%;
+  }
+  
+  .donut {
+    background-image: url('https://images-na.ssl-images-amazon.com/images/I/91AKQkCR3UL._AC_SX522_.jpg');
+    background-position: 50% 70%;
+  }
+  
+  .pancake {
+    background-image: url('https://selfproclaimedfoodie.com/wp-content/uploads/pumpkin-buttermilk-pancakes-top.jpg');
+    background-position: 50% 90%;
+  }
+
+
+    /* NAV */
+    header nav {
+        position: initial !important;
+        align-items: baseline;
+        padding: 20px 70px !important;
+      }
+    
+      header nav .nav-button {
+        display: none;
+      }
+    
+      header nav div {
+        position: initial !important;
+        background: none !important;
+        opacity: initial !important;
+        transform: initial !important;
+      }
+    
+      header nav div ul {
+        position: initial !important;
+        flex-direction: row !important;
+      }
+    
+      header nav div ul .exit-menu {
+        display: none;
+      }
+    
+      header nav div ul li a {
+        font-size: 12.8px;
+        margin: 0 10px;
+        letter-spacing: 1px;
+        padding: 5px 0 !important;
+      }
+    
+      header nav div ul .active {
+        border-bottom: solid 1px lightgray;
+      }
+    
+    @media (max-width: 769px) {
+        
+     header nav h2 {
+        display:none;
+    }
+    }
+
+    
+/* HEADER */
+header {
+    min-height: 10vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .8), transparent),
+      url('http://zigis.com.au/wp-content/uploads/2014/05/holiday2013_front.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* NAV */
+  header nav {
+    padding: 15px 35px;
+    display: flex;
+    position: relative;
+  }
+  
+  header nav h2 {
+    margin-bottom: 0;
+    flex: 1;
+    letter-spacing: 3px;
+    font-family: 'Overpass Mono', monospace;
+  }
+  
+  header nav #logo {
+    color: lightgray;
+    text-transform: uppercase;
+    border-bottom: solid 2px lightgray;
+  }
+  
+  header nav .nav-button {
+    color: #c0c0c0;
+    font-size: 23px;
+  }
+  
+  header nav div {
+    background: rgba(0, 0, 0, .9);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    text-align: center;
+    transform: scale(0);
+    opacity: 0;
+    transition: opacity .2s;
+  }
+  
+  header nav div ul {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  header nav div ul .exit-menu {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: lightgray;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  header nav div ul li {
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    list-style-type: none;
+
+  }
+  
+  header nav div ul li a {
+    display: block;
+    color: lightgray;
+    padding: 15px 5px;
+    transition: all .4s;
+  }
+  
+  header nav div ul li a:hover,
+  header nav div ul li .active:hover {
+    color: rgb(190, 128, 64);
+    border-bottom-color: rgb(190, 128, 64);
+  }
+  
+  header nav div.show {
+    transform: scale(1);
+    opacity: 1;
+  }
